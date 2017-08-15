@@ -45,9 +45,8 @@ function BreadthFirstSearch(walls, cols, rows) {
 
         // Consider the snake body as wall
         for(var i = 0; i < snakeData.length; i++){
-            var x = snakeData[i].x;
-            var y = snakeData[i].y;
-            node[x][y].value = SNAKE;
+            var x = snakeData[i].x, y = snakeData[i].y;
+            nodes[x][y].value = SNAKE;
         }
 
         // Add the start node to queue
